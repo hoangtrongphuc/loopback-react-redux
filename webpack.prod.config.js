@@ -6,7 +6,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './client/scripts/main.js',
+    main: ['babel-polyfill','./client/scripts/main.js'],
     vendor: [
       'lodash',
       'moment',
